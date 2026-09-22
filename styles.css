@@ -1,0 +1,202 @@
+   h3 {
+                color: rgb(2, 136, 60);
+                 
+            }
+           
+            h1{
+                font-family: Arial, Helvetica, sans-serif;
+                color: rgb(255, 255, 255);
+            }
+            body{
+
+                background-color: whitesmoke;
+                color: rgb(6, 6, 6);
+                margin: 0;
+                padding: 0;
+            }
+
+header{
+background-color: rgb(0, 0, 0);
+color: white;
+padding: 20px;
+
+}
+
+
+header a {
+color: rgb(255, 255, 255);
+text-decoration: none;
+text-transform: uppercase;
+margin-top: 48;
+
+}
+
+header .logo a {
+    background-image: url("images/logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+
+    display: block;
+    width: 250px;
+    height: 141px;
+
+    text-indent: -9999px;
+}
+
+section{
+background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+padding: 20px;
+display: flex;
+flex-direction: row;
+
+}
+
+.featured {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+
+    gap: 60px;
+
+    padding: 50px;
+}
+
+.cover {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.cover h2 {
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 40px;
+
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.book-container {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    margin: 0;
+}
+
+.book {
+   
+
+    margin: 0;
+
+    background-color: rgb(253, 253, 253);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+
+    overflow: hidden;
+}
+
+.book img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.main-book {
+    width: 250px;
+    height: 360px;
+}
+
+.summary {
+   
+    width: 50%;
+
+    background-color: rgb(254, 254, 254);
+
+    margin: 0;
+
+    padding: 40px;
+    padding-top: 200px;
+}
+
+.summary h2 {
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 32px;
+
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.summary p {
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 16px;
+
+    line-height: 1.6;
+
+    margin-bottom: 25px;
+}
+
+
+
+
+.movie {
+   
+
+padding-left: 190px;
+}
+
+.movie iframe {
+    width: 300px;
+
+    height: 170px;
+
+    border: none;
+
+    display: block;
+}
+
+
+
+ul{
+margin: 0;
+padding: 0;
+list-style-type: none;
+
+}
+li{
+display: inline-block;
+margin: 20px;
+
+}
+
+footer{
+background-color: rgb(249, 0, 0);
+color: black;
+padding: 10px 20px;
+
+}
+
+.trailer{
+padding-left: 190px;
+margin-top: 100px;
+}
+
+.description {
+padding-left: 200px;
+background-color: rgb(255, 255, 255);
+font-size: 40px;
+}

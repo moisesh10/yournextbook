@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
+
     <head>
-        <title>NextBook</title>
-        <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title> Nextbook</title>
+        <link rel="stylesheet" href="styles.css"> 
+
 
       
     </head>
@@ -22,48 +27,77 @@
 </ul>
 
         </nav>
-        <h1>Your Next Book Is One Click Away</h1>
+        <h2>  Your Next Book Is One Click Away</h2>
 
     </header>
 
-    <section class="featured">
+    <main>
 
+    <section class="featured" id="featured">
+
+
+        <!-- Left book carousel -->
         <div class="cover">
         <h2>What's new?</h2>
-        <div class="book-container">
+        <div class="carousel-container">
             
-                    <div class="book book-main">
-                         <a href="greatgatsby.pdf" target="_blank" aria-label="Open
-                the full PDF document">
-                <img 
-               
-                    src="images/8dzdnj-front-shortedge-384.jpg"
-                    alt ="The Great Gatsby">
-                  
-                    </div>
-                </a>
-        </div>
+            <button class="book-card left"
+                data-position="-1"
+                type="button" 
+                 class="book book-main">
+            <a href="/Users/moiseshernandez/BookLibrary/pg1727-images-3.epub" target="_blank" 
+                aria-label="Select previous book">
+                <img src="images/71b4GOgfUTL._AC_UF1000,1000_QL80_.jpg" 
+                alt="Previous books">
+                </button>
+                
+                <button class="book-card center"
+                data-position="0"
+                type="button" 
+                  class="book book-main">
+            <a href="greatgatsby.pdf" target="_blank" 
+                
+                
+
+                aria-label="Select The Great Gatsby">
+                <img src="images/8dzdnj-front-shortedge-384.jpg" 
+                alt="The Great Gatsby ">
+              
+            </button>
+
+             <button class="book-card right"
+                data-position="1"
+                type="button" 
+                  class="book book-main">
+            <a href="pride-and-prejudice.pdf" target="_blank" 
+                aria-label="Select next book">
+                <img src="images/images.jpeg" 
+                alt="Next book ">
+              
+            </button>
+
+            </div>
+
+            <p class="carousel-hint">
+            Hover over a book to preview it. Click to read select it.
+                </p>
+
         </div>
 
-      
-        
-
+      <!-- Book description -->
+          <div class="summary">
+            
+            <h2 class="description"
+            id="book-title"></h2>
+            The Great Gatsby 
+          </h2>
          
 
-        <div class ="summary">
-         <div class="description">
-                Description
-                </div>
-                <p>
-                    
-                </p>
-        </p>
-            <p>
+            <p id="book-description">
                     
                          
                             
-                    
-                
+
                 The Great Gatsby is a 20th Century classic set in the
                 summer of 1922 in Long Island, New York City. Told by
                 the first-person narrator, Nick Carraway, a Yale University
@@ -72,33 +106,63 @@
                 parties at his mansion in Long Island.
 
             </p>
-            <p>
+            <p id="book-extra" >
                 Will Gatsby's deep and undying love for his former flame,
                 the beautiful, yet unattainable Daisy Buchanan lead him
                 down a winding road to ruin or will his hot pursuit of the
                 American Dream lead to his happily ever after?
+            </p>
+
             
-             
-            <div class ="trailer">
-             <h2>Want to see more?</h2>
-           
 
-      
+            <a class="read-button"
+            id="read-button"
+            gerf="greatgatsby.pdf"
+            target="blank"
+            rel="noopener noerferrer">
+            Read Book
+        </a>
             </div>
-            <div class="movie">
-<p>
-<iframe width="500" height="281" src="https://www.youtube.com/embed/rARN6agiW7o?si=CdvWV61wny7_uTol" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            
+            </section>
 
-              
+         <!--Moive trailer-->
 
+         <section class="trailer">
 
-    
+         <h2> Want to see more</h2>
 
-    <footer>
+         <div class="moive">
+            <iframe 
 
-    </footer>
+            width="500"
+            height="281"
+            src="https://www.youtube.com/embed/rARN6agiW7o?si=CdvWV61wny7_uTol"
+            title="Youtube vidoe player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picutre-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+        </iframe>
 
-    </body>
+        </div>
+        </section>
 
+        <section class="categories"
+        id="categories">
+   
+        <h2>Categories</h2>
 
-</html>
+        <div class="category-list">
+        <div>Fiction</div> 
+        <div>History</div>
+        <div>Science</div>
+        <div>Fantasy</div>
+        </div>
+        </section>
+   </main>
+   <footer>
+
+   </footer>   
+   <script src="script.js"></script>
+   </body>
+   </html>
